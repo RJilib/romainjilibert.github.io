@@ -42,10 +42,10 @@ nav .right p {
     margin-left: 30px;
     font-size: 22px;
     cursor: pointer;
-    border-bottom: var(--blouge);
 }
+
 nav .right p:hover {
-    border-bottom-color: (var(--undercolor));
+    border-bottom-color: var(--undercolor);
 }
 
 .icone {
@@ -59,6 +59,9 @@ nav .right p:hover {
 .icone p {
     color: #C0C0C0;
     font-size: 15px;
+}
+.icone .github {
+    margin-bottom: 8px;
 }
 
 .profile  {
@@ -104,12 +107,53 @@ nav .right p:hover {
     color: var(--undercolor);
 }
 .section h3 {
-    font-size: max(2vw, 20px);
+    font-size: max(1.8vw, 20px);
     color: #C0C0C0;
 }
 
 .section p {
-    font-size: max(2vw, 20px);
+    font-size: max(1.5vw, 15px);
+}
+
+.aboutme {
+    transform: translateY(+50%);
+    opacity: 0;
+    transition: transform 1s ease-in-out,
+    opacity 1.5s ease-in-out;
+}
+.aboutme.active{
+    transform: translateX(0%);
+    opacity: 1;
+}
+.job {
+    transform: translateY(+50%);
+    opacity: 0;
+    transition: transform 1s ease-in-out,
+    opacity 1.5s ease-in-out;
+}
+.job.active{
+    transform: translateX(0%);
+    opacity: 1;
+}
+.job2 {
+    transform: translateY(+50%);
+    opacity: 0;
+    transition: transform 1s ease-in-out,
+    opacity 1.5s ease-in-out;
+}
+.job2.active{
+    transform: translateX(0%);
+    opacity: 1;
+}
+.abilities {
+    transform: translateY(+50%);
+    opacity: 0;
+    transition: transform 2s ease-in-out,
+    opacity 2s ease-in-out;
+}
+.abilities.active{
+    transform: translateX(0%);
+    opacity: 1;
 }
 
 .presentation {
@@ -130,7 +174,8 @@ nav .right p:hover {
 .aboutme {
     margin-bottom: 90px;
 }
-.bowl {
+.resume2 {
+    margin-top: 160px;
     margin-left: 70px;
 }
 .information {
@@ -148,7 +193,7 @@ nav .right p:hover {
 }
 
 .job h1 {
-    margin-top: 250px ;
+    margin-top: 250px;
 }
 
 .ministry {
@@ -160,7 +205,7 @@ nav .right p:hover {
     flex-direction: column;
     align-content: flex-start;
     padding: 0px 18%;
-    margin-top: 250px;
+    margin-top: 200px;
 }
 
 @media screen and (max-width: 1350px) {
@@ -185,5 +230,7 @@ nav .right p:hover {
     .icone {
 		display: none;
     }
-
+    .resume2 {
+        display: none;
+    }
 }
