@@ -38,14 +38,16 @@ nav .info h2 {
 nav .right {
     display: flex;
 }
-nav .right p {
+nav .right a {
+    color: whitesmoke;
+    text-decoration: none;
     margin-left: 30px;
     font-size: 22px;
     cursor: pointer;
 }
 
-nav .right p:hover {
-    border-bottom-color: var(--undercolor);
+nav .right a:hover {
+    border-bottom-color: gray;
 }
 
 .icone {
