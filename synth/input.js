@@ -74,6 +74,15 @@ button.addEventListener('click', () => {
     }
 })
 
+button.addEventListener('click', () => {
+    if(button.value === "on") {
+        oscillator.start(0);
+        oscillator2.start(0);
+        lfo.start(0);
+        button.setAttribute('value', 'off');
+    }
+})
+
 function makeDistortionCurve( amount ) {
     console.log(amount);
     var k = typeof amount === 'number' ? amount : 50,
